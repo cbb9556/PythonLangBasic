@@ -16,6 +16,8 @@ def singleton(cls):
     @wraps(cls)
     def wrapper(*args, **kwargs):
         if cls not in instances:
+            # 相当于，进入时加锁，退出时解锁，这里如果已经被锁住，则无法获取，已经创建直接返回创建的单例
+            # ref https://zhuanlan.zhihu.com/p/360604465
             with lock:
                 if cls not in instances:
                     instances[cls] = cls(*args, **kwargs)
