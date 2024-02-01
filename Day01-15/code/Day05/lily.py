@@ -4,7 +4,7 @@
 如: 153 = 1**3 + 5**3 + 3**3
 
 Version: 0.1
-Author: 骆昊
+Author: leo
 Date: 2018-03-02
 """
 

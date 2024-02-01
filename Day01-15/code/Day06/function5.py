@@ -6,7 +6,7 @@
 - 命名关键字参数
 
 Version: 0.1
-Author: 骆昊
+Author: leo
 Date: 2018-03-05
 """
 
@@ -45,8 +45,8 @@ def f3(**kw):
         print('没找到你的个人信息!')
 
 
-param = {'name': '骆昊', 'age': 38}
+param = {'name': 'leo', 'age': 38}
 f3(**param)
-f3(name='骆昊', age=38, tel='13866778899')
-f3(user='骆昊', age=38, tel='13866778899')
-f3(user='骆昊', age=38, mobile='13866778899')
+f3(name='leo', age=38, tel='13866778899')
+f3(user='leo', age=38, tel='13866778899')
+f3(user='leo', age=38, mobile='13866778899')

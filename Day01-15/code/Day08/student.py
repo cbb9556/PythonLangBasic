@@ -2,7 +2,7 @@
 定义和使用学生类
 
 Version: 0.1
-Author: 骆昊
+Author: leo
 Date: 2018-03-08
 """
 
@@ -10,7 +10,7 @@ Date: 2018-03-08
 def _foo():
     print('test')
 
-
+    
 class Student(object):
 
     # __init__是一个特殊方法用于在创建对象时进行初始化操作
@@ -32,7 +32,7 @@ class Student(object):
 
 
 def main():
-    stu1 = Student('骆昊', 38)
+    stu1 = Student('leo', 38)
     stu1.study('Python程序设计')
     stu1.watch_av()
     stu2 = Student('王大锤', 15)

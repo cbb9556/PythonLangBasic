@@ -2,7 +2,7 @@
 多个线程共享数据 - 有锁的情况
 
 Version: 0.1
-Author: 骆昊
+Author: leo
 Date: 2018-03-20
 """
 

@@ -4,7 +4,7 @@
 例如: 6 = 1 + 2 + 3, 28 = 1 + 2 + 4 + 7 + 14
 
 Version: 0.1
-Author: 骆昊
+Author: leo
 Date: 2018-03-02
 """
 import math

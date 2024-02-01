@@ -124,11 +124,11 @@ vim _config.yml
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 骆昊的技术专栏
+title: leo的技术专栏
 subtitle: 传道、授业、解惑，分享知识带来的快乐
 description:
 keywords:
-author: 骆昊
+author: leo
 language: zh
 timezone:
 

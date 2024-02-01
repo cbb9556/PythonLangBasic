@@ -2,7 +2,7 @@
 双色球随机选号程序
 
 Version: 0.1
-Author: 骆昊
+Author: leo
 Date: 2018-03-06
 """
 

@@ -4,7 +4,7 @@
 - C3算法(替代DFS的算法)
 
 Version: 0.1
-Author: 骆昊
+Author: leo
 Date: 2018-03-12
 """
 

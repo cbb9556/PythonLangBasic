@@ -10,10 +10,10 @@ from time import time, sleep
 import pymysql
 
 
+# 装饰器函数，核心代码不能更改的时候，需要用@修饰符，传递核心函数
+# ref https://zhuanlan.zhihu.com/p/265779360
 def record(output):
-
     def decorate(func):
-
         @wraps(func)
         def wrapper(*args, **kwargs):
             start = time()
@@ -48,7 +48,7 @@ def output_to_db(fname, duration):
         con.close()
 
 
-@record(output_to_console)
+@record(output_to_console())
 def random_delay(min, max):
     sleep(randint(min, max))
 

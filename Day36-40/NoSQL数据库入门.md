@@ -428,14 +428,14 @@ systemctl start mongod
 
    ```JavaScript
    > // 向students集合插入文档
-   > db.students.insert({stuid: 1001, name: '骆昊', age: 40})
+   > db.students.insert({stuid: 1001, name: 'leo', age: 40})
    WriteResult({ "nInserted" : 1 })
    > // 向students集合插入文档
    > db.students.save({stuid: 1002, name: '王大锤', tel: '13012345678', gender: '男'})
    WriteResult({ "nInserted" : 1 })
    > // 查看所有文档
    > db.students.find()
-   { "_id" : ObjectId("5b13c72e006ad854460ee70b"), "stuid" : 1001, "name" : "骆昊", "age" : 38 }
+   { "_id" : ObjectId("5b13c72e006ad854460ee70b"), "stuid" : 1001, "name" : "leo", "age" : 38 }
    { "_id" : ObjectId("5b13c790006ad854460ee70c"), "stuid" : 1002, "name" : "王大锤", "tel" : "13012345678", "gender" : "男" }
    > // 更新stuid为1001的文档
    > db.students.update({stuid: 1001}, {'$set': {tel: '13566778899', gender: '男'}})
@@ -453,7 +453,7 @@ systemctl start mongod
    {
            "_id" : ObjectId("5b13c72e006ad854460ee70b"),
            "stuid" : 1001,
-           "name" : "骆昊",
+           "name" : "leo",
            "age" : 38,
            "gender" : "男",
            "tel" : "13566778899"
@@ -492,9 +492,9 @@ systemctl start mongod
    > db.students.find({stuid: {'$gt': 1001}}, {_id: 0, name: 1, tel: 1}).pretty()
    { "name" : "王大锤", "tel" : "13012345678" }
    { "name" : "白元芳", "tel" : "13022223333" }
-   > // 查询name为“骆昊”或者tel为“13022223333”的文档
-   > db.students.find({'$or': [{name: '骆昊'}, {tel: '13022223333'}]}, {_id: 0, name: 1, tel: 1}).pretty()
-   { "name" : "骆昊", "tel" : "13566778899" }
+   > // 查询name为“leo”或者tel为“13022223333”的文档
+   > db.students.find({'$or': [{name: 'leo'}, {tel: '13022223333'}]}, {_id: 0, name: 1, tel: 1}).pretty()
+   { "name" : "leo", "tel" : "13566778899" }
    { "name" : "白元芳", "tel" : "13022223333" }
    > // 查询学生文档跳过第1条文档只查1条文档
    > db.students.find().skip(1).limit(1).pretty()
@@ -509,7 +509,7 @@ systemctl start mongod
    > db.students.find({}, {_id: 0, stuid: 1, name: 1}).sort({stuid: -1})
    { "stuid" : 1003, "name" : "白元芳" }
    { "stuid" : 1002, "name" : "王大锤" }
-   { "stuid" : 1001, "name" : "骆昊" }
+   { "stuid" : 1001, "name" : "leo" }
    > // 在指定的一个或多个字段上创建索引
    > db.students.ensureIndex({name: 1})
    {
@@ -543,7 +543,7 @@ pip install pymongo
 ...     print('电话:', student['tel'])
 ... 
 学号: 1001.0
-姓名: 骆昊
+姓名: leo
 电话: 13566778899
 学号: 1002.0
 姓名: 王大锤
@@ -562,7 +562,7 @@ pip install pymongo
 >>> coll = db.students
 >>> coll.create_index([('name', ASCENDING)], unique=True)
 'name_1'
->>> coll.insert_one({'stuid': int(1001), 'name': '骆昊', 'gender': True})
+>>> coll.insert_one({'stuid': int(1001), 'name': 'leo', 'gender': True})
 <pymongo.results.InsertOneResult object at 0x1050cc6c8>
 >>> coll.insert_many([{'stuid': int(1002), 'name': '王大锤', 'gender': False}, {'stuid': int(1003), 'name': '白元芳', 'gender': True}])
 <pymongo.results.InsertManyResult object at 0x1050cc8c8>
@@ -572,7 +572,7 @@ pip install pymongo
 ...     print('性别:', '男' if student['gender'] else '女')
 ... 
 学号: 1001
-姓名: 骆昊
+姓名: leo
 性别: 男
 学号: 1003
 姓名: 白元芳

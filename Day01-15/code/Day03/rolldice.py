@@ -2,7 +2,7 @@
 掷骰子决定做什么事情
 
 Version: 0.1
-Author: 骆昊
+Author: leo
 Date: 2018-02-28
 """
 from random import randint
@@ -21,3 +21,7 @@ elif face == 5:
 else:
     result = '讲冷笑话'
 print(result)
+
+
+if __name__ == '__main__':
+    print()

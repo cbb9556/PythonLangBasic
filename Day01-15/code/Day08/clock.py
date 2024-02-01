@@ -2,7 +2,7 @@
 定义和使用时钟类
 
 Version: 0.1
-Author: 骆昊
+Author: leo
 Date: 2018-03-08
 """
 
@@ -42,10 +42,10 @@ class Clock(object):
 
 
 if __name__ == '__main__':
-    # clock = Clock(hour=10, minute=5, second=58)
-    clock = Clock()
+    clock = Clock(hour=10, minute=5, second=58)
+    #clock = Clock()
     while True:
-        os.system('clear')
+        os.system('cls')
         print(clock.show())
         time.sleep(1)
         clock.run()

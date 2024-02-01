@@ -2,7 +2,7 @@
 实现进程间的通信
 
 Version: 0.1
-Author: 骆昊
+Author: leo
 Date: 2018-03-20
 """
 import multiprocessing

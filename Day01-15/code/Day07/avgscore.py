@@ -2,7 +2,7 @@
 输入学生考试成绩计算平均分
 
 Version: 0.1
-Author: 骆昊
+Author: leo
 Date: 2018-03-06
 """
 

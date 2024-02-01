@@ -2,7 +2,7 @@
 用户身份验证
 
 Version: 0.1
-Author: 骆昊
+Author: leo
 Date: 2018-02-28
 """
 # import getpass
@@ -17,3 +17,12 @@ if username == 'admin' and password == '123456':
     print('身份验证成功!')
 else:
     print('身份验证失败!')
+
+if __name__ == '__main__':
+    x = input()
+    y = input()
+
+    if x == 'aa' and y == 'bb':
+        print('ss')
+    else:
+        print('st')

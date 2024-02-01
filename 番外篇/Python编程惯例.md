@@ -21,7 +21,7 @@
    ```Python
    name = 'jackfrued'
    fruits = ['apple', 'orange', 'grape']
-   owners = {'1001': '骆昊', '1002': '王大锤'}
+   owners = {'1001': 'leo', '1002': '王大锤'}
    if name and fruits and owners:
        print('I love fruits!')
    ```
@@ -31,7 +31,7 @@
    ```Python
    name = 'jackfrued'
    fruits = ['apple', 'orange', 'grape']
-   owners = {'1001': '骆昊', '1002': '王大锤'}
+   owners = {'1001': 'leo', '1002': '王大锤'}
    if name != '' and len(fruits) > 0 and owners != {}:
        print('I love fruits!')
    ```
@@ -161,7 +161,7 @@
 
    ```Python
    keys = ['1001', '1002', '1003']
-   values = ['骆昊', '王大锤', '白元芳']
+   values = ['leo', '王大锤', '白元芳']
    d = dict(zip(keys, values))
    print(d)
    ```
@@ -170,7 +170,7 @@
 
    ```Python
    keys = ['1001', '1002', '1003']
-   values = ['骆昊', '王大锤', '白元芳']
+   values = ['leo', '王大锤', '白元芳']
    d = {}
    for i, key in enumerate(keys):
        d[key] = values[i]

@@ -2,7 +2,7 @@
 生成器 - 使用yield关键字
 
 Version: 0.1
-Author: 骆昊
+Author: leo
 Date: 2018-03-21
 """
 
